@@ -29,6 +29,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   font-size: var(--Font-size);
+  user-select:none;
 }
 
 .calculator-app {
