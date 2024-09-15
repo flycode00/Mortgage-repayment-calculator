@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/3618d78403.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Mortgage repayment calculator</title>
+  </head>
+  <body>
+    <main class="calculator-app">
+      <div class="mortgage-cal-container">
+        <div class="mortgage-header">
+          <h3>Mortgage Calculator</h3>
+          <span class="clear-btn">Clear All</span>
+        </div>
+
+        <div class="mortgage-content">
+          <div class="mortgage-amount-wrapper">
+            <h5>Mortgage Amount</h5>
+
+            <div class="amount-container n-container">
+              <input
+                type="text"
+                class="amount-input n-input"
+                size="11"
+                maxlength="11"
+              />
+              <span><i class="fa-solid fa-euro-sign"></i> </span>
+            </div>
+          </div>
+
+          <div class="mortgage-term-rate-wrapper">
+            <div class="mortgage-term-wrapper">
+              <h5>Mortgage Term</h5>
+
+              <div class="term-container n-container">
+                <input
+                  type="text"
+                  class="term-input n-input"
+                  size="2"
+                  maxlength="2"
+                />
+                <span>years</span>
+              </div>
+            </div>
+
+            <div class="mortgage-rate-wrapper">
+              <h5>Interest Rate</h5>
+
+              <div class="rate-container n-container">
+                <input
+                  type="text"
+                  class="rate-input n-input"
+                  size="5"
+                  maxlength="5"
+                />
+                <span><i class="fa-solid fa-percent"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mortgage-type-wrapper">
+            <h5>Mortgage Type</h5>
+
+            <div class="type-wrapper">
+              <div class="repayment-type-container type-container">
+                <input
+                  type="radio"
+                  name="mortgage-type"
+                  id="mortgage-type-1"
+                  class="type-input"
+                  value="repayment"
+                />
+                <span>Repayment</span>
+              </div>
+
+              <div class="interest-type-container type-container">
+                <input
+                  type="radio"
+                  name="mortgage-type"
+                  id="mortgage-type-2"
+                  class="type-input"
+                  value="interest Only"
+                />
+                <span>Interest Only</span>
+              </div>
+            </div>
+          </div>
+
+          <button class="submit-cal">
+            <i class="fa-solid fa-calculator"></i>
+            <span>Calculate Repayments</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="calculator-results">
+        <div class="results-empty right-c-active">
+          <img
+            src="./assets/images/illustration-empty.svg"
+            alt="illustration-empty"
+          />
+          <h3>Results shown here</h3>
+          <p>
+            Complete the form and click “calculate repayments” to see what your
+            monthly repayments would be.
+          </p>
+        </div>
+
+        <div class="results-total">
+          <h3>Your results</h3>
+          <p>
+            Your results are shown below based on the information you provided.
+            To adjust the results, edit the form and click “calculate
+            repayments” again.
+          </p>
+          <div class="montly-repayment-container">
+            <h5>Your monthly repayments</h5>
+            <p class="montly-results"></p>
+
+            <hr />
+
+            <h5>Total you'll repay over the term</h5>
+            <span class="total-repay-results"></span>
+          </div>
+        </div>
+
+        <div class="results-error">
+          <h2>Error Message</h2>
+          <i class="fa-solid fa-x"></i>
+          <p class="error-text">asdasdasd</p>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+<!-- 
+  
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+   
+  
+  
+  -->
